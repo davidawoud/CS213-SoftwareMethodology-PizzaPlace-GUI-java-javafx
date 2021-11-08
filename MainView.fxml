@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainSceneController">
+   <children>
+      <Pane fx:id="mainPane" layoutX="-37.0" layoutY="-12.0" prefHeight="446.0" prefWidth="502.0">
+         <children>
+            <Pane fx:id="titlePane" layoutX="40.0" layoutY="14.0" prefHeight="46.0" prefWidth="455.0">
+               <children>
+                  <Label layoutX="90.0" layoutY="9.0" text="Soft Meth Pizza Shop" textFill="RED">
+                     <font>
+                        <Font name="Courier New Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TextField fx:id="phoneNumberBox" layoutX="343.0" layoutY="70.0" prefHeight="25.0" prefWidth="145.0" />
+            <Label layoutX="163.0" layoutY="74.0" text="Customer Phone Number">
+               <font>
+                  <Font name="Courier New" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="hawPizza" fitHeight="101.0" fitWidth="100.0" layoutX="54.0" layoutY="219.0" onMouseClicked="#order_h_pizza" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../h_pizza.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="delPizza" fitHeight="109.0" fitWidth="108.0" layoutX="54.0" layoutY="107.0" onMouseClicked="#order_d_pizza" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../d_pizza.PNG" />
+               </image></ImageView>
+            <ImageView fx:id="pepPizza" fitHeight="101.0" fitWidth="100.0" layoutX="53.0" layoutY="327.0" onMouseClicked="#order_p_pizza" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../p_pizza.PNG" />
+               </image>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="73.0" text="Menu">
+               <font>
+                  <Font name="Courier New" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="currentOrder" fitHeight="150.0" fitWidth="200.0" layoutX="269.0" layoutY="119.0" onMouseClicked="#display_current_orders" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../current_order.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="storeOrder" fitHeight="150.0" fitWidth="200.0" layoutX="252.0" layoutY="278.0" onMouseClicked="#display_store_orders" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../store_order.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
